@@ -1,0 +1,61 @@
+:root {
+    --celeste: #a7e2e3;
+    --verde: #5fb46d;
+    --negro: #000000;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--celeste);
+    color: var(--negro);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer {
+    background-color: var(--verde);
+    color: white;
+}
+
+.content {
+    flex: 1;
+}
+
+.hero {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.btn-primary {
+    background-color: #f4a261;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #e07b39;
+}
+
+
+footer {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+}
