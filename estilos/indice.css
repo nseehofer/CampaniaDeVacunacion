@@ -7,7 +7,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-color: var(--celeste);
+    /*background-color: var(--celeste);*/
     color: var(--negro);
     font-family: 'Segoe UI', sans-serif;
 }
