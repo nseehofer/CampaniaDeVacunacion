@@ -4,8 +4,7 @@
     --negro: #000000;
 }
 
-html,
-body {
+html, body {
     height: 100%;
     margin: 0;
     background-color: var(--celeste);
@@ -16,6 +15,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 header,
@@ -24,8 +24,11 @@ footer {
     color: white;
 }
 
-.content {
-    flex: 1;
+main.content {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero {
@@ -52,7 +55,6 @@ footer {
 .btn-primary:hover {
     background-color: #e07b39;
 }
-
 
 footer {
     padding: 1rem 0;
