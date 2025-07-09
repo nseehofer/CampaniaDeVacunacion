@@ -85,3 +85,9 @@ footer {
 }
 
 
+@media (max-width: 991px) {
+  .media-query {
+    margin-left:2%;
+    flex-direction:column;
+  }
+}
