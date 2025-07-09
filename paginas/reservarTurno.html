@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaña de Vacunación Provincial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link href="../estilos/reservaTurno.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h4 class="m-0">Vacunate Provincia</h4>
+            <nav>
+                <a href="#" class="text-white text-decoration-none me-3">Inicio</a>
+                <a href="#" class="text-white text-decoration-none me-3">Centros</a>
+                <a href="#" class="text-white text-decoration-none">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+        <section class="hero w-100">
+            <div class="container d-flex flex-column align-items-center py-4">
+                <h2 class="text-center mb-2">Reservá tu turno de vacunación: <span class="nombre-usuario">Mario
+                        Luis</span></h2>
+                <form class="d-flex flex-column gap-4 mt-5">
+
+                    <div class="mb-3">
+                        <label class="form-label d-block mb-2 fs-5 letra-negrita">Tipo de vacuna</label>
+                        <div class="btn-group d-flex flex-wrap gap-5" role="group" aria-label="Tipo de vacuna">
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="covid" autocomplete="off">
+                            <label class="btn btn-outline-danger m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="covid"style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa COVID" class="me-3 img-fluid"
+                                    style="max-height: 40px;">
+                                <span class="fs-5">COVID-19</span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="gripe" autocomplete="off">
+                            <label class="btn btn-outline-success m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="gripe" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Gripe" class="me-3 img-fluid"
+                                    style="max-height: 40px;">
+                                <span>Gripe</span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="fiebreAmarilla"
+                                autocomplete="off">
+                            <label class="btn btn-outline-warning  m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="fiebreAmarilla" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Fiebre amarilla" class="me-3 img-fluid"
+                                    style="max-height: 40px;">
+                                <span>Fiebre amarilla</span>
+                            </label>
+
+                        </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                        <label class="form-label d-block mb-2 fs-5 letra-negrita">Centro de vacunación</label>
+                        <div class="btn-group d-flex flex-wrap" role="group" aria-label="Centro de vacunación">
+                            <input type="radio" class="btn-check " name="centroVacunacion" id="sanJusto"
+                                autocomplete="off">
+                            <label class="btn btn-outline-success m-1 flex-fill text-center" for="sanJusto"
+                                style="border-radius: 0.2rem;">Ctro
+                                Vacunacion San
+                                Justo</label>
+
+                            <input type="radio" class="btn-check " name="centroVacunacion" id="laTablada"
+                                autocomplete="off">
+                            <label class="btn btn-outline-success m-1 flex-fill text-center" for="laTablada"
+                                style="border-radius: 0.2rem;">Ctro
+                                Vacunacion La
+                                Tablada</label>
+
+                            <input type="radio" class="btn-check" name="centroVacunacion" id="ramosMejia"
+                                autocomplete="off">
+                            <label class="btn btn-outline-success m-1 flex-fill text-center" for="ramosMejia"
+                                style="border-radius: 0.2rem;">Ctro
+                                Vacunacion Ramos
+                                Mejía</label>
+
+                            <input type="radio" class="btn-check" name="centroVacunacion" id="gonzalezCatan"
+                                autocomplete="off">
+                            <label class="btn btn-outline-success m-1 flex-fill text-center" for="gonzalezCatan"
+                                style="border-radius: 0.2rem;">Ctro
+                                Vacunacion González Catán</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="semana" class="form-label fs-5 letra-negrita">Semana de vacunación</label>
+                            <select class="form-select border border-dark fit-content cursor-pointer" id="semana">
+                                <option selected disabled>Seleccioná una semana disponible</option>
+                            </select>
+                            <small class="text-muted">Mostrando semanas desde hoy a 3 meses en adelante</small>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label d-block mb-2">Franja horaria</label>
+                            <div class="btn-group d-flex flex-wrap" role="group" aria-label="Franja horaria">
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="manana"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary m-1 flex-fill text-center fit-content"
+                                    for="manana" style="border-radius: 0.2rem;">Mañana</label>
+
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="mediaManana"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary m-1 flex-fill text-center fit-content"
+                                    for="mediaManana" style="border-radius: 0.2rem;">Media-mañana</label>
+
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="mediodia"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary m-1 flex-fill text-center fit-content"
+                                    for="mediodia" style="border-radius: 0.2rem;">Mediodía</label>
+
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="mediaTarde"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary m-1 flex-fill text-center fit-content"
+                                    for="mediaTarde" style="border-radius: 0.2rem;">Media-tarde</label>
+
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="tarde"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary m-1 flex-fill text-center fit-content" for="tarde"
+                                    style="border-radius: 0.2rem;">Tarde</label>
+
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="tardeNoche"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-primary m-1 flex-fill text-center fit-content"
+                                    for="tardeNoche" style="border-radius: 0.2rem;">Tarde-noche</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-3 d-flex justify-content-center ms-auto">Confirmar
+                        turno</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">© 2025 Gobierno de la Provincia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const select = document.getElementById("semana");
+        const today = new Date();
+        const maxDate = new Date();
+        maxDate.setMonth(maxDate.getMonth() + 3); // 3 meses adelante
+
+        let current = new Date(today);
+
+        while (current <= maxDate) {
+            const startOfWeek = new Date(current);
+            startOfWeek.setDate(current.getDate() - current.getDay() + 1); // lunes
+            const endOfWeek = new Date(startOfWeek);
+            endOfWeek.setDate(startOfWeek.getDate() + 6); // domingo
+
+            const weekText = `${startOfWeek.getDate()}–${endOfWeek.getDate()} de ${startOfWeek.toLocaleString('es-ES', { month: 'long' })}`;
+            const option = document.createElement("option");
+            option.value = startOfWeek.toISOString().split("T")[0];
+            option.textContent = weekText;
+
+            select.appendChild(option);
+
+            current.setDate(current.getDate() + 7); // siguiente semana
+        }
+    </script>
+</body>
+
+</html>
