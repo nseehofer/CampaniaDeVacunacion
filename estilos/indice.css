@@ -34,11 +34,13 @@ main.content {
 .hero {
     padding: 4rem 1rem;
     text-align: center;
+    padding-bottom: 15rem;
 }
 
 .hero h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    color: green;
 }
 
 .hero p {
@@ -64,4 +66,33 @@ footer {
 
 .submit{
     width: 100%;
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.hero-text {
+  max-width: 600px;
+  flex: 1;
+}
+
+.hero-img {
+  max-width: 700px;
+  flex: 1;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .hero-img {
+    display: none;
+  }
 }
