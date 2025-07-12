@@ -111,9 +111,10 @@ footer {
   }
 
   .estilo-extra {
-    width: 85% !important;
-    font-size:large;
-    margin-bottom:10%;
+    width: 100% !important;
+    font-size: large;
+    margin-bottom: 10%;
+    background-color: #8fc9ca;
   }
 
   .hero-container {
@@ -126,18 +127,81 @@ footer {
   max-width: fit-content;
 }
 
-.estilo-extra {
-  width: 35%;
+.fuente-xlarge {
   font-size: x-large;
 }
 
+.ancho-div {
+  width: 60%;
+  gap:2rem;
+}
+
 .estilo-div-pregunta {
+  align-self: center;
   background-color: #1e727d;
   color: white;
   padding: 1.5%;
   border-radius: 1rem;
+  width: fit-content;
 }
 
 .agrandar-fuente {
   font-size: large;
+}
+
+.color-back-section{
+  background-color: #8fc9ca;
+}
+
+.info-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
+  font-weight: bolder;
+  margin-bottom: 5%;
+}
+
+.box {
+  background-color: #1e727d;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.03);
+}
+
+.icon-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.icon-item {
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.icon-item i {
+  font-size: 3rem;
+  color: #1e727d;
+  margin-bottom: 0.5rem;
+}
+
+.icon-item p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
 }
