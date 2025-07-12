@@ -1,71 +1,77 @@
 :root {
-    --celeste: #a7e2e3;
-    --verde: #5fb46d;
-    --negro: #000000;
+  --celeste: #a7e2e3;
+  --verde: #5fb46d;
+  --negro: #000000;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    /*background-color: var(--celeste);*/
-    color: var(--negro);
-    font-family: 'Segoe UI', sans-serif;
+html,
+body {
+  margin: 0%;
+  /*background-color: var(--celeste);*/
+  color: var(--negro);
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header,
 footer {
-    background-color: var(--verde);
-    color: white;
+  background-color: var(--verde);
+  color: white;
+}
+
+main {
+  background-color: var(--celeste);
 }
 
 main.content {
-    flex: 1; /* Ocupa el espacio restante */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 1;
+  /* Ocupa el espacio restante */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
 }
 
 .hero {
-    padding: 4rem 1rem;
-    text-align: center;
-    padding-bottom: 15rem;
+  padding: 4rem 1rem;
+  text-align: center;
+  padding-bottom: 15rem;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: green;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: green;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-top: 1rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .btn-primary {
-    background-color: #f4a261;
-    border: none;
-    color: white;
+  background-color: #f4a261;
+  border: none;
+  color: white;
 }
 
 .btn-primary:hover {
-    background-color: #e07b39;
+  background-color: #e07b39;
 }
 
 footer {
-    padding: 1rem 0;
-    text-align: center;
-    font-size: 0.9rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
-.submit{
-    width: 100%;
+.submit {
+  width: 100%;
 }
 
 .hero-container {
@@ -91,8 +97,47 @@ footer {
   object-fit: cover;
 }
 
-@media (max-width: 760px) {
+.justify-btn {
+  justify-content: end;
+}
+
+@media (max-width: 850px) {
   .hero-img {
     display: none;
   }
+
+  .justify-btn {
+    justify-content: space-evenly;
+  }
+
+  .estilo-extra {
+    width: 85% !important;
+    font-size:large;
+    margin-bottom:10%;
+  }
+
+  .hero-container {
+    margin-top: 10%;
+  }
+
+}
+
+.fit-content {
+  max-width: fit-content;
+}
+
+.estilo-extra {
+  width: 35%;
+  font-size: x-large;
+}
+
+.estilo-div-pregunta {
+  background-color: #1e727d;
+  color: white;
+  padding: 1.5%;
+  border-radius: 1rem;
+}
+
+.agrandar-fuente {
+  font-size: large;
 }
