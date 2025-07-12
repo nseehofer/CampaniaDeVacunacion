@@ -91,3 +91,11 @@ footer {
     flex-direction:column;
   }
 }
+
+.disabled-label {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none; /* evita que se seleccione o se pinte */
+    background-color: transparent !important;
+    color: inherit !important;
+}

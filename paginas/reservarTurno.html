@@ -15,8 +15,8 @@
         <div class="container d-flex justify-content-between align-items-center">
             <h4 class="m-0">Vacunate Provincia</h4>
             <nav class="d-flex align-items-center">
-                <a href="../index.html" class="text-white text-decoration-none me-3">Inicio</a>
-                <a href="#" class="text-white text-decoration-none d-flex align-items-center">
+                <a href="../paginas/indexSesionIniciada.html"
+                    class="text-white text-decoration-none d-flex align-items-center">
                     <i class="bi bi-person-circle fs-4 me-2"></i>
                     <span class="d-none d-sm-inline">Mario Luis</span>
                 </a>
@@ -63,6 +63,67 @@
                                     style="max-height: 40px;">
                                 <span>Fiebre amarilla</span>
                             </label>
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="hepB" autocomplete="off">
+                            <label
+                                class="btn btn-outline-primary m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="hepB" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Hepatitis B" class="me-3 img-fluid"
+                                    style="max-height: 40px;">
+                                <span title="Hepatitis B">HEP</span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="neumococo" autocomplete="off">
+                            <label
+                                class="btn btn-outline-secondary m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="neumococo" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Neumococo" class="me-3 img-fluid"
+                                    style="max-height: 40px;">
+                                <span title="Neumococo">NEU</span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="tba" autocomplete="off">
+                            <label class="btn btn-outline-info m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="tba" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Triple Bacteriana Acelular"
+                                    class="me-3 img-fluid" style="max-height: 40px;">
+                                <span title="Triple Bacteriana Acelular">TBA</span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="db" autocomplete="off">
+                            <label class="btn btn-outline-dark m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="db" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Doble Bacteriana" class="me-3 img-fluid"
+                                    style="max-height: 40px;">
+                                <span title="Doble Bacteriana">DBA</span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="dv" autocomplete="off">
+                            <label
+                                class="btn btn-outline-primary m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="dv" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Doble Viral" class="me-3 img-fluid"
+                                    style="max-height: 40px;">
+                                <span title="Doble Viral">DVI</span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="vsr" autocomplete="off">
+                            <label
+                                class="btn btn-outline-success m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="vsr" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Virus Sincicial Respiratorio"
+                                    class="me-3 img-fluid" style="max-height: 40px;">
+                                <span title="Virus Sincicial Respiratorio">VSR</span>
+                            </label>
+
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="fha" autocomplete="off">
+                            <label
+                                class="btn btn-outline-warning m-1 flex-fill d-flex align-items-center py-2 fit-content"
+                                for="fha" style="border-radius: 0.2rem;">
+                                <img src="../img/jeringa.png" alt="Jeringa Fiebre Hemorrágica Argentina"
+                                    class="me-3 img-fluid" style="max-height: 40px;">
+                                <span title="Fiebre Hemorrágica Argentina">FHA</span>
+                            </label>
+
 
                         </div>
                     </div>
@@ -132,8 +193,9 @@
 
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="mediaManana"
                                     autocomplete="off">
-                                <label class="btn btn-outline-success m-1 flex-fill text-center fit-content borde-negro"
-                                    for="mediaManana" style="border-radius: 0.2rem;">Media-mañana</label>
+                                <label
+                                    class="btn btn-outline-secondary m-1 flex-fill text-center fit-content borde-negro"
+                                    for="mediaManana" id="media-maniana" style="border-radius: 0.2rem;">Media-mañana</label>
 
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="mediodia"
                                     autocomplete="off">
@@ -152,8 +214,11 @@
 
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="tardeNoche"
                                     autocomplete="off">
-                                <label class="btn btn-outline-success m-1 flex-fill text-center fit-content borde-negro"
-                                    for="tardeNoche" style="border-radius: 0.2rem;">Tarde-noche</label>
+                                <label
+                                    class="btn btn-outline-secondary  m-1 flex-fill text-center fit-content borde-negro"
+                                    for="tardeNoche" id="tarde-noche" style="border-radius: 0.2rem;">Tarde-noche</label>
+
+
                             </div>
                         </div>
 
@@ -243,7 +308,13 @@
             pintarSiSeleccionado(domSemanaSelect);
         });
 
-
+        const nodoSemana = document.getElementById("semana");
+        const nodoTardeNoche = document.getElementById("tarde-noche");
+        const nodoMediaManiana = document.getElementById("media-maniana");
+        nodoSemana.addEventListener("change", function () {
+            nodoTardeNoche.classList.add("disabled-label");
+            nodoMediaManiana.classList.add("disabled-label");
+        });
 
     </script>
 </body>
