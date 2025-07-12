@@ -189,33 +189,34 @@
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="manana"
                                     autocomplete="off">
                                 <label class="btn btn-outline-success m-1 flex-fill text-center fit-content borde-negro"
-                                    for="manana" style="border-radius: 0.2rem;">Mañana</label>
+                                    for="manana" id="manana" style="border-radius: 0.2rem;">Mañana</label>
 
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="mediaManana"
                                     autocomplete="off">
                                 <label
                                     class="btn btn-outline-secondary m-1 flex-fill text-center fit-content borde-negro"
-                                    for="mediaManana" id="media-maniana" style="border-radius: 0.2rem;">Media-mañana</label>
+                                    for="mediaManana" id="media-maniana"
+                                    style="border-radius: 0.2rem;">Media-mañana</label>
 
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="mediodia"
                                     autocomplete="off">
                                 <label class="btn btn-outline-success m-1 flex-fill text-center fit-content borde-negro"
-                                    for="mediodia" style="border-radius: 0.2rem;">Mediodía</label>
+                                    for="mediodia" id="mediodia" style="border-radius: 0.2rem;">Mediodía</label>
 
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="mediaTarde"
                                     autocomplete="off">
                                 <label class="btn btn-outline-success m-1 flex-fill text-center fit-content borde-negro"
-                                    for="mediaTarde" style="border-radius: 0.2rem;">Media-tarde</label>
+                                    for="mediaTarde" id="media-tarde" style="border-radius: 0.2rem;">Media-tarde</label>
 
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="tarde"
                                     autocomplete="off">
                                 <label class="btn btn-outline-success m-1 flex-fill text-center fit-content borde-negro"
-                                    for="tarde" style="border-radius: 0.2rem;">Tarde</label>
+                                    for="tarde" id="tarde" style="border-radius: 0.2rem;">Tarde</label>
 
                                 <input type="radio" class="btn-check" name="franjaHoraria" id="tardeNoche"
                                     autocomplete="off">
                                 <label
-                                    class="btn btn-outline-secondary  m-1 flex-fill text-center fit-content borde-negro"
+                                    class="btn btn-outline-success  m-1 flex-fill text-center fit-content borde-negro"
                                     for="tardeNoche" id="tarde-noche" style="border-radius: 0.2rem;">Tarde-noche</label>
 
 
@@ -311,9 +312,54 @@
         const nodoSemana = document.getElementById("semana");
         const nodoTardeNoche = document.getElementById("tarde-noche");
         const nodoMediaManiana = document.getElementById("media-maniana");
+        const nodoManana = document.getElementById("manana");
+        const nodoMediodia = document.getElementById("mediodia");
+        const nodoTarde = document.getElementById("tarde");
+        const nodoMediaTarde = document.getElementById("media-tarde");
         nodoSemana.addEventListener("change", function () {
-            nodoTardeNoche.classList.add("disabled-label");
-            nodoMediaManiana.classList.add("disabled-label");
+            const horarios = [nodoManana, nodoMediaManiana, nodoMediodia, nodoMediaTarde, nodoTarde, nodoTardeNoche];
+
+            // Limpiar todos los estados anteriores
+            horarios.forEach(nodo => {
+                nodo.classList.remove("disabled-label");
+            });
+
+            // Generar un número aleatorio entre 1 y 4
+            const random = Math.floor(Math.random() * 8) + 1;
+
+            // Aplicar nuevas restricciones según el random
+            switch (random) {
+                case 1:
+                    nodoManana.classList.add("disabled-label");
+                    break;
+                case 2:
+                    nodoTardeNoche.classList.add("disabled-label");
+                    break;
+                case 3:
+                    nodoTarde.classList.add("disabled-label");
+                    nodoManana.classList.add("disabled-label");
+                    break;
+                case 4:
+                    nodoMediaTarde.classList.add("disabled-label");
+                    nodoManana.classList.add("disabled-label");
+                    break;
+                case 5:
+                    nodoTardeNoche.classList.add("disabled-label");
+                    nodoManana.classList.add("disabled-label");
+                    break;
+                case 6:
+                    nodoMediodia.classList.add("disabled-label");
+                    nodoTarde.classList.add("disabled-label");
+                    break;
+                case 7:
+                    nodoTarde.classList.add("disabled-label");
+                    nodoManana.classList.add("disabled-label");
+                    break;
+                case 8:
+                    nodoMediaTarde.classList.add("disabled-label");
+                    nodoMediaManiana.classList.add("disabled-label");
+                    break;
+            }
         });
 
     </script>
