@@ -2,14 +2,21 @@
   --celeste: #a7e2e3;
   --verde: #5fb46d;
   --negro: #000000;
+  --gris-claro: #f8f9fa;
+  --vacuna-color1: #986192;
+  --vacuna-color2: #A67D75;
+  --vacuna-color3: #4D7E5A;
+  --vacuna-color4: #427AA1;
+  --vacuna-color5: #0B6F53;
 }
 
 html,
 body {
   margin: 0%;
-  /*background-color: var(--celeste);*/
+  background-color: var(--celeste);
   color: var(--negro);
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.6;
 }
 
 body {
@@ -34,7 +41,7 @@ main.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15rem;
+  gap: 2rem;
 }
 
 .hero {
@@ -101,6 +108,299 @@ footer {
   justify-content: end;
 }
 
+.campaña-2025{
+  font-weight: bold;
+}
+
+.btn-custom {
+  background-color: #5fb46d;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #489c58;
+  color: white;
+}
+
+.btn {
+  font-size: 1.3rem;
+}
+
+.estilo-div-pregunta {
+  background-color: var(--verde);
+  color: white;
+  padding: 2%;
+  border-radius: 1rem;
+}
+
+input.form-control {
+  border: 1.5px solid #5fb46d;
+}
+
+input.form-control:focus {
+  border-color: #4da75e;
+  box-shadow: 0 0 0 0.15rem rgba(95, 180, 109, 0.25);
+}
+
+.login-container{
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  background-color: var(--gris-claro);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    .form-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    font-size: 1.2rem;
+    color: #888;
+    pointer-events: none;
+    }
+
+    .registrate-aca{
+      font-size: 1rem;
+    }
+}
+
+.registro-container{
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 2.5rem;
+  background-color: var(--gris-claro);
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  .btn-check{
+    border-color: var(--verde);
+  }
+}
+
+.btn-outline-genero {
+  border-color: var(--verde);
+  color: var(--verde);
+}
+
+.btn-outline-genero:hover,
+.btn-check:checked + .btn-outline-genero {
+  background-color: var(--verde);
+  color: white;
+}
+
+.btn-outline-genero:hover,
+.btn-outline-genero:focus {
+  background-color: var(--verde);
+  color: white;
+  border-color: var(--verde);
+}
+
+.icono{
+  font-size: 4rem; 
+  color: #5fb46d;
+}
+
+.registro-exitoso{
+  max-width: 500px; 
+  background: white; 
+  border-radius: 1rem;
+}
+
+.confirmar-turno{
+  max-width: 800px; 
+  background: white; 
+  border-radius: 1rem;
+}
+
+.form-container {
+      max-width: 500px;
+      margin: 5rem auto;
+      padding: 2.5rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+.reservar-turno{
+  background-color: white;
+  max-width: 1100px;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+}
+
+.item-reservar-turno{
+  border: 2px solid var(--celeste);
+  border-radius: 2rem;
+  padding: 1.2rem;
+}
+
+.descatar{
+  background-color: var(--verde);
+}
+
+/* reservar turno */
+
+.jeringa{
+  max-height: 40px;
+}
+
+.btn-outline-color1 {
+  color: black; /* texto y borde */
+  border: 2.5px solid var(--vacuna-color1);
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.btn-outline-color1:hover,
+.btn-outline-color1:focus,
+.btn-outline-color1:active {
+  background-color: transparent !important;
+  color: var(--vacuna-color1) !important;
+  border: 2px solid var(--vacuna-color1) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+input[type="radio"]:checked + .btn-outline-color1 {
+  background-color: var(--vacuna-color1);
+  color: white;
+  border-color: var(--vacuna-color1);
+}
+input[type="radio"]:checked + .btn-outline-color1:hover,
+input[type="radio"]:checked + .btn-outline-color1:focus,
+input[type="radio"]:checked + .btn-outline-color1:active {
+  background-color: var(--vacuna-color1) !important;
+  color: white !important;
+  border: 2.5px solid var(--vacuna-color1) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-outline-color2 {
+  color: black; /* texto y borde */
+  border: 2.5px solid var(--vacuna-color2);
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.btn-outline-color2:hover,
+.btn-outline-color2:focus,
+.btn-outline-color2:active {
+  background-color: transparent !important;
+  color: var(--vacuna-color2) !important;
+  border: 2px solid var(--vacuna-color2) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+input[type="radio"]:checked + .btn-outline-color2 {
+  background-color: var(--vacuna-color2);
+  color: white;
+  border-color: var(--vacuna-color2);
+}
+input[type="radio"]:checked + .btn-outline-color2:hover,
+input[type="radio"]:checked + .btn-outline-color2:focus,
+input[type="radio"]:checked + .btn-outline-color2:active {
+  background-color: var(--vacuna-color2) !important;
+  color: white !important;
+  border: 2.5px solid var(--vacuna-color2) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-outline-color3 {
+  color: black; /* texto y borde */
+  border: 2.5px solid var(--vacuna-color3);
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.btn-outline-color3:hover,
+.btn-outline-color3:focus,
+.btn-outline-color3:active {
+  background-color: transparent !important;
+  color: var(--vacuna-color3) !important;
+  border: 2px solid var(--vacuna-color3) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+input[type="radio"]:checked + .btn-outline-color3 {
+  background-color: var(--vacuna-color3);
+  color: white;
+  border-color: var(--vacuna-color3);
+}
+input[type="radio"]:checked + .btn-outline-color3:hover,
+input[type="radio"]:checked + .btn-outline-color3:focus,
+input[type="radio"]:checked + .btn-outline-color3:active {
+  background-color: var(--vacuna-color3) !important;
+  color: white !important;
+  border: 2.5px solid var(--vacuna-color3) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-outline-color4 {
+  color: black;
+  border: 2.5px solid var(--vacuna-color4);
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.btn-outline-color4:hover,
+.btn-outline-color4:focus,
+.btn-outline-color4:active {
+  background-color: transparent !important;
+  color: var(--vacuna-color4) !important;
+  border: 2px solid var(--vacuna-color4) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+input[type="radio"]:checked + .btn-outline-color4 {
+  background-color: var(--vacuna-color4);
+  color: white;
+  border-color: var(--vacuna-color4);
+}
+input[type="radio"]:checked + .btn-outline-color4:hover,
+input[type="radio"]:checked + .btn-outline-color4:focus,
+input[type="radio"]:checked + .btn-outline-color4:active {
+  background-color: var(--vacuna-color4) !important;
+  color: white !important;
+  border: 2.5px solid var(--vacuna-color4) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-outline-color5 {
+  color: black;
+  border: 2.5px solid var(--vacuna-color5);
+  background-color: transparent;
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.btn-outline-color5:hover,
+.btn-outline-color5:focus,
+.btn-outline-color5:active {
+  background-color: transparent !important;
+  color: var(--vacuna-color5) !important;
+  border: 2px solid var(--vacuna-color5) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+input[type="radio"]:checked + .btn-outline-color5 {
+  background-color: var(--vacuna-color5);
+  color: white;
+  border-color: var(--vacuna-color5);
+}
+input[type="radio"]:checked + .btn-outline-color5:hover,
+input[type="radio"]:checked + .btn-outline-color5:focus,
+input[type="radio"]:checked + .btn-outline-color5:active {
+  background-color: var(--vacuna-color5) !important;
+  color: white !important;
+  border: 2.5px solid var(--vacuna-color5) !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 @media (max-width: 850px) {
   .hero-img {
     display: none;
@@ -127,15 +427,8 @@ footer {
 }
 
 .estilo-extra {
-  width: 35%;
+  width: 50%;
   font-size: x-large;
-}
-
-.estilo-div-pregunta {
-  background-color: #1e727d;
-  color: white;
-  padding: 1.5%;
-  border-radius: 1rem;
 }
 
 .agrandar-fuente {

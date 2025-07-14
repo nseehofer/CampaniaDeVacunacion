@@ -49,10 +49,6 @@ footer {
     background-color: #e07b39;
 }
 
-.nombre-usuario{
-    color:blue;
-    font-weight: bolder;
-}
 
 .fit-content{
     max-width: fit-content;
@@ -98,4 +94,8 @@ footer {
     pointer-events: none; /* evita que se seleccione o se pinte */
     background-color: transparent !important;
     color: inherit !important;
+}
+
+.min-vh-60 {
+    min-height: 60vh;
 }
