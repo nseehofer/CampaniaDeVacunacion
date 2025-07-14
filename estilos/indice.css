@@ -121,6 +121,10 @@ footer {
     margin-top: 10%;
   }
 
+  .direcion-query{
+    flex-direction: column;
+  }
+
 }
 
 .fit-content {
@@ -204,4 +208,17 @@ footer {
   font-size: 1.1rem;
   color: #333;
   margin: 0;
+}
+
+.margen-cero{
+margin:0%;
+}
+
+.equal-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vh;       
+  height: 15vh;      
+  text-align: center; 
 }
