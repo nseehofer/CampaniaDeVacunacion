@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaña de Vacunación Provincial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../estilos/indice.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h4 class="m-0 fw-bold">VACUNATE PROVINCIA</h4>
+            <nav>
+                <a href="../index.html" class="text-white text-decoration-none me-3">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="content d-flex justify-content-center align-items-center py-4">
+        <section>
+            <div class="reservar-turno d-flex flex-column align-items-center">
+                <h2 class="text-center mb-4 fw-bold fs-1">¿Tenés dudas?</h2>
+                <p class="text-center mb-4 fs-4">
+                    Las preguntas más frecuentes sobre la campaña de vacunación. Nuestro objetivo es que tengas toda la información clara y accesible.
+                </p>
+
+                <div class="accordion w-100" id="accordionPreguntas" style="max-width: 900px;">
+                    <!-- Pregunta 1 -->
+                    <div class="accordion-item mb-3 borde-sombreado">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                ¿Cuáles son los efectos secundarios más comunes?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionPreguntas">
+                            <div class="accordion-body fs-5">
+                                Los efectos más comunes incluyen dolor o enrojecimiento en la zona de aplicación, cansancio, fiebre leve o dolor de cabeza. Suelen durar entre 24 y 48 horas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="accordion-item mb-3 borde-sombreado">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                ¿Qué hago si tengo fiebre después de vacunarme?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2" data-bs-parent="#accordionPreguntas">
+                            <div class="accordion-body fs-5">
+                                Es normal tener fiebre leve. Se recomienda reposo, mantenerse hidratado y tomar paracetamol si fuera necesario. Si la fiebre supera los 38.5°C o dura más de 48 horas, consultá a un médico.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="accordion-item mb-3 borde-sombreado">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                ¿Puedo vacunarme si estoy embarazada?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3" data-bs-parent="#accordionPreguntas">
+                            <div class="accordion-body fs-5">
+                                Sí, algunas vacunas están especialmente indicadas durante el embarazo. Consultá con tu obstetra para saber cuáles corresponden según tu etapa de gestación.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="accordion-item mb-3 borde-sombreado">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                ¿Dónde están ubicados los centros de vacunación?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionPreguntas">
+                            <div class="accordion-body fs-5">
+                                Podés consultar la sección <a href="centros.html">Centros de Vacunación</a> donde listamos todos los lugares disponibles y sus direcciones, además de buscarlos por localidad.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="accordion-item mb-3 borde-sombreado">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                ¿Puedo llevar a un acompañante?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionPreguntas">
+                            <div class="accordion-body fs-5">
+                                Sí, podés ir acompañado. Se recomienda especialmente para personas mayores, con movilidad reducida o menores de edad.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-center mt-4 fs-5">
+                    Si necesitás más información, podés comunicarte con nosotros por WhatsApp o al 0800-XXX-XXXX.
+                </p>
+                <a href="../index.html" class="btn btn-custom w-100 mt-3">Volver al inicio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="mb-0">© 2025 Gobierno de la Provincia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
