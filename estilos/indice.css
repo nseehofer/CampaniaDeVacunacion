@@ -128,11 +128,47 @@ footer {
 }
 
 .estilo-div-pregunta {
-  background-color: var(--verde);
+  background-color: var(--vacuna-color4);
   color: white;
   padding: 2%;
   border-radius: 1rem;
 }
+.btn-custom1 {
+  background-color: var(--vacuna-color4);
+  color: white;
+}
+.btn-custom1:hover {
+  background-color: var(--vacuna-color4);
+  color: white;
+}
+.bg-azul {
+  background-color: var(--vacuna-color4);
+}
+.icon-box {
+  min-width: 220px;
+  max-width: 250px;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-informativo {
+  background-color: #427AA1;
+}
+.back-informativo-href {
+  background-color: #427AA1;
+}
+.back-informativo-href:hover{
+background-color: #0f3435;
+}
+
+.disabled-label {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none; /* evita que se seleccione o se pinte */
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
 
 input.form-control {
   border: 1.5px solid #5fb46d;

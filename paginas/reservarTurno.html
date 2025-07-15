@@ -30,7 +30,9 @@
     <main class="content d-flex justify-content-center align-items-center " style="min-height: 60vh;">
         <section class="hero w-100 reservar-turno">
             <div class="container d-flex flex-column align-items-center py-4 borde-sombreado ">
-                <h2 class="text-center mb-2 fw-bold fs-1">Reservá tu turno de vacunación:</h2>
+                <h2 class="text-center mb-2 fw-bold fs-1 d-flex flex-column">Reservá tu turno de vacunación:</br> <span
+                        class="back-informativo"
+                        style="color:white;border-radius: 1rem; padding:0.5%;align-self: center;">Mario Luis</span></h2>
                 <form class="d-flex flex-column gap-5 mt-5">
 
                     <div class="mb-3 item-reservar-turno">
@@ -293,33 +295,47 @@
             switch (random) {
                 case 1:
                     nodoManana.classList.add("disabled-label");
+                    nodoManana.disabled = true;
                     break;
                 case 2:
                     nodoTardeNoche.classList.add("disabled-label");
+                    nodoTardeNoche.disabled = true;
                     break;
                 case 3:
                     nodoTarde.classList.add("disabled-label");
+                    nodoTarde.disabled = true;
                     nodoManana.classList.add("disabled-label");
+                    nodoManana.disabled = true;
                     break;
                 case 4:
                     nodoMediaTarde.classList.add("disabled-label");
+                    nodoMediaTarde.disabled = true;
                     nodoManana.classList.add("disabled-label");
+                    nodoManana.disabled = true;
                     break;
                 case 5:
                     nodoTardeNoche.classList.add("disabled-label");
+                    nodoTardeNoche.disabled = true;
                     nodoManana.classList.add("disabled-label");
+                    nodoManana.disabled = true;
                     break;
                 case 6:
                     nodoMediodia.classList.add("disabled-label");
+                    nodoMediodia.disabled = true;
                     nodoTarde.classList.add("disabled-label");
+                    nodoTarde.disabled = true;
                     break;
                 case 7:
                     nodoTarde.classList.add("disabled-label");
+                    nodoTarde.disabled = true;
                     nodoManana.classList.add("disabled-label");
+                    nodoManana.disabled = true;
                     break;
                 case 8:
                     nodoMediaTarde.classList.add("disabled-label");
+                    nodoMediaTarde.disabled = true;
                     nodoMediaManiana.classList.add("disabled-label");
+                    nodoMediaManiana.disabled = true;
                     break;
             }
         });
