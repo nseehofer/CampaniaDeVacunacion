@@ -14,7 +14,9 @@
 <body>
     <header class="py-3">
         <div class="container d-flex justify-content-between align-items-center">
-            <h4 class="m-0 fw-bold">VACUNATE PROVINCIA</h4>
+            <a href="./indexSesionIniciada.html" class="text-decoration-none" style="color:white">
+                <h4 class="m-0 fw-bold">Vacunate Provincia</h4>
+            </a>
             <nav class="d-flex align-items-center">
                 <a href="../paginas/indexSesionIniciada.html"
                     class="text-white text-decoration-none d-flex align-items-center">
@@ -29,169 +31,204 @@
     <main class="content d-flex justify-content-center align-items-center " style="min-height: 60vh;">
         <section class="hero w-100 reservar-turno">
             <div class="container d-flex flex-column align-items-center py-4 borde-sombreado ">
-                <h2 class="text-center mb-2 fw-bold fs-1">Reservá tu turno de vacunación:</h2>
+                <h2 class="text-center mb-2 fw-bold fs-1 d-flex flex-column">Reservá tu turno de vacunación: </br> <span
+                        class="back-informativo"
+                        style="color:white;border-radius: 1rem; padding:0.5%;align-self: center;">Mario Luis</span></h2>
                 <form class="d-flex flex-column gap-5 mt-5">
 
                     <div class="mb-3 item-reservar-turno">
-                    <label class="form-label d-block mb-2 fs-3 fw-bold">Tipo de vacuna</label>
+                        <label class="form-label d-block mb-2 fs-3 fw-bold">Tipo de vacuna</label>
                         <!-- visibles siempre -->
                         <div class="btn-group d-flex flex-wrap gap-3 mb-2" role="group" aria-label="Vacunas visibles">
                             <!-- covid -->
                             <input type="radio" class="btn-check" name="tipoVacuna" id="covid" autocomplete="off">
-                            <label class="btn btn-outline-color1 rounded-pill flex-fill d-flex align-items-center py-2" for="covid">
+                            <label class="btn btn-outline-color1 rounded-pill flex-fill d-flex align-items-center py-2"
+                                for="covid">
                                 <img src="../img/jeringa.png" alt="COVID" class="me-2 jeringa">
                                 <span>COVID-19</span>
                             </label>
                             <!-- gripe -->
                             <input type="radio" class="btn-check" name="tipoVacuna" id="gripe" autocomplete="off">
-                            <label class="btn btn-outline-color2 rounded-pill flex-fill d-flex align-items-center py-2" for="gripe">
-                                <img src="../img/jeringa.png" alt="Gripe" class="me-2 jeringa">
-                                <span>Gripe</span>
+                            <label class="btn btn-outline-color2 rounded-pill flex-fill d-flex align-items-center py-2"
+                                for="gripe">
+                                <img src="../img/jeringa.png" alt="antigripal" class="me-2 jeringa">
+                                <span>ANTIGRIPAL</span>
                             </label>
                             <!-- fiebre amarilla -->
-                            <input type="radio" class="btn-check" name="tipoVacuna" id="fiebreAmarilla" autocomplete="off">
-                            <label class="btn btn-outline-color3 rounded-pill flex-fill d-flex align-items-center py-2" for="fiebreAmarilla">
+                            <input type="radio" class="btn-check" name="tipoVacuna" id="fiebreAmarilla"
+                                autocomplete="off">
+                            <label class="btn btn-outline-color3 rounded-pill flex-fill d-flex align-items-center py-2"
+                                for="fiebreAmarilla">
                                 <img src="../img/jeringa.png" alt="Fiebre amarilla" class="me-2 jeringa">
-                                <span>Fiebre amarilla</span>
+                                <span>FIEBRE AMARILLA</span>
                             </label>
                         </div>
 
-                    <!-- oculto por defecto -->
-                    <div id="vacunasExtra" class="collapse">
-                        <div class="btn-group d-flex flex-wrap gap-3" role="group" aria-label="Vacunas ocultas">
-                            <!-- hepatitis b -->
-                            <input type="radio" class="btn-check" name="tipoVacuna" id="hepB" autocomplete="off">
-                            <label class="btn btn-outline-color4 rounded-pill flex-fill d-flex align-items-center py-2" for="hepB">
-                                <img src="../img/jeringa.png" alt="Hepatitis B" class="me-2 jeringa">
-                                <span>HEP</span>
-                            </label>
-                            <!-- neumococo -->
-                            <input type="radio" class="btn-check" name="tipoVacuna" id="neumococo" autocomplete="off">
-                            <label class="btn btn-outline-color5 rounded-pill flex-fill d-flex align-items-center py-2" for="neumococo">
-                                <img src="../img/jeringa.png" alt="Neumococo" class="me-2 jeringa">
-                                <span>NEU</span>
-                            </label>
-                            <!-- triple bacteriana acelular -->                                    
-                            <input type="radio" class="btn-check" name="tipoVacuna" id="tba" autocomplete="off">
-                            <label class="btn btn-outline-color3 rounded-pill flex-fill d-flex align-items-center py-2" for="tba">
-                                <img src="../img/jeringa.png" alt="Jeringa Triple Bacteriana Acelular" class="me-2 jeringa">
-                                <span>TBA</span>
-                            </label>
-                            <!-- doble bacteriana -->
-                            <input type="radio" class="btn-check" name="tipoVacuna" id="db" autocomplete="off">
-                            <label class="btn btn-outline-color1 rounded-pill flex-fill d-flex align-items-center py-2" for="db">
-                                <img src="../img/jeringa.png" alt="Jeringa Doble Bacteriana" class="me-3 jeringa">
-                                <span title="Doble Bacteriana">DBA</span>
-                            </label>
-                            <!-- doble viral -->
-                            <input type="radio" class="btn-check" name="tipoVacuna" id="dv" autocomplete="off">
-                            <label class="btn btn-outline-color4 rounded-pill flex-fill d-flex align-items-center py-2" for="dv">
-                                <img src="../img/jeringa.png" alt="Jeringa Doble Viral" class="me-3 jeringa">
-                                <span title="Doble Viral">DVI</span>
-                            </label>
-                            <!-- virus sincicial respiratorio -->
-                            <input type="radio" class="btn-check" name="tipoVacuna" id="vsr" autocomplete="off">
+                        <!-- oculto por defecto -->
+                        <div id="vacunasExtra" class="collapse">
+                            <div class="btn-group d-flex flex-wrap gap-3" role="group" aria-label="Vacunas ocultas">
+                                <!-- hepatitis b -->
+                                <input type="radio" class="btn-check" name="tipoVacuna" id="hepB" autocomplete="off">
+                                <label
+                                    class="btn btn-outline-color4 rounded-pill flex-fill d-flex align-items-center py-2"
+                                    for="hepB">
+                                    <img src="../img/jeringa.png" alt="Hepatitis B" class="me-2 jeringa">
+                                    <span title="Hepatitis B">HEP</span>
+                                </label>
+                                <!-- neumococo -->
+                                <input type="radio" class="btn-check" name="tipoVacuna" id="neumococo"
+                                    autocomplete="off">
+                                <label
+                                    class="btn btn-outline-color5 rounded-pill flex-fill d-flex align-items-center py-2"
+                                    for="neumococo">
+                                    <img src="../img/jeringa.png" alt="Neumococo" class="me-2 jeringa">
+                                    <span title="Neumococo">NEU</span>
+                                </label>
+                                <!-- Triple Viral -->
+                                <input type="radio" class="btn-check" name="tipoVacuna" id="tba" autocomplete="off">
+                                <label
+                                    class="btn btn-outline-color3 rounded-pill flex-fill d-flex align-items-center py-2"
+                                    for="tba">
+                                    <img src="../img/jeringa.png" alt="Jeringa Triple Viral" class="me-2 jeringa">
+                                    <span title="Triple Viral">TRIPLE VIRAL</span>
+                                </label>
+                                <!-- doble bacteriana -->
+                                <input type="radio" class="btn-check" name="tipoVacuna" id="db" autocomplete="off">
+                                <label
+                                    class="btn btn-outline-color1 rounded-pill flex-fill d-flex align-items-center py-2"
+                                    for="db">
+                                    <img src="../img/jeringa.png" alt="Jeringa Doble Bacteriana" class="me-3 jeringa">
+                                    <span title="Doble Bacteriana">DBA</span>
+                                </label>
+                                <!-- fiebre hemorrágica argentina -->
+                                <input type="radio" class="btn-check" name="tipoVacuna" id="fha" autocomplete="off">
+                                <label
+                                    class="btn btn-outline-color5 rounded-pill flex-fill d-flex align-items-center py-2"
+                                    for="fha">
+                                    <img src="../img/jeringa.png" alt="Jeringa Fiebre Hemorrágica Argentina"
+                                        class="me-3 jeringa">
+                                    <span title="Fiebre Hemorrágica Argentina">FHA</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- botón para expandir -->
+                        <div class="mt-3">
+                            <button class="btn btn-custom rounded-pill" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#vacunasExtra" aria-expanded="false" aria-controls="vacunasExtra"
+                                id="toggleVacunasBtn">
+                                Ver más
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mb-3 item-reservar-turno">
+                        <label class="form-label d-block mb-2 fs-3 fw-bold">Centro de vacunación</label>
+                        <p>Tus centros de salud más cercanos:</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2 mb-3" role="group"
+                            aria-label="Centro de vacunación">
+                            <input type="radio" class="btn-check " name="centroVacunacion" id="sanJusto"
+                                autocomplete="off">
                             <label
-                                class="btn btn-outline-color2 rounded-pill flex-fill d-flex align-items-center py-2" for="vsr">
-                                <img src="../img/jeringa.png" alt="Jeringa Virus Sincicial Respiratorio" class="me-3 jeringa">
-                                <span title="Virus Sincicial Respiratorio">VSR</span>
-                            </label>
-                            <!-- fiebre hemorrágica argentina -->
-                            <input type="radio" class="btn-check" name="tipoVacuna" id="fha" autocomplete="off">
+                                class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion"
+                                for="sanJusto">Ctro Vacunación San Justo</label>
+                            <input type="radio" class="btn-check " name="centroVacunacion" id="laTablada"
+                                autocomplete="off">
                             <label
-                                class="btn btn-outline-color5 rounded-pill flex-fill d-flex align-items-center py-2" for="fha">
-                                <img src="../img/jeringa.png" alt="Jeringa Fiebre Hemorrágica Argentina" class="me-3 jeringa">
-                                <span title="Fiebre Hemorrágica Argentina">FHA</span>
+                                class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion"
+                                for="laTablada">Ctro Vacunación La Tablada</label>
+                            <input type="radio" class="btn-check" name="centroVacunacion" id="ramosMejia"
+                                autocomplete="off">
+                            <label
+                                class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion"
+                                for="ramosMejia">Ctro Vacunación Ramos Mejía</label>
+                        </div>
+
+                        <!-- buscador -->
+                        <p>¿No te sirven esos? Buscá otros centros disponibles:</p>
+                        <input type="text" id="buscadorCentros" class="form-control rounded-pill mb-3"
+                            placeholder="Buscar por localidad o nombre...">
+
+                        <!-- resultados filtrables -->
+                        <div id="otrosCentros" class="btn-group d-flex flex-wrap" role="group"
+                            aria-label="Otros centros">
+                            <input type="radio" class="btn-check" name="centroVacunacion" id="ituzaingo"
+                                autocomplete="off">
+                            <label
+                                class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion"
+                                for="ituzaingo">
+                                Ctro Vacunación Ituzaingó
                             </label>
-        </div>
-    </div>
 
-    <!-- botón para expandir -->
-    <div class="mt-3">
-        <button class="btn btn-custom rounded-pill" type="button" data-bs-toggle="collapse"
-            data-bs-target="#vacunasExtra" aria-expanded="false" aria-controls="vacunasExtra" id="toggleVacunasBtn">
-            Ver más
-        </button>
-    </div>
-</div>
-    <div class="mb-3 item-reservar-turno">
-        <label class="form-label d-block mb-2 fs-3 fw-bold">Centro de vacunación</label>
-        <p>Tus centros de salud más cercanos:</p>
-        <div class="d-flex flex-wrap justify-content-center gap-2 mb-3" role="group" aria-label="Centro de vacunación">
-            <input type="radio" class="btn-check " name="centroVacunacion" id="sanJusto" autocomplete="off">
-                <label class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion" 
-                for="sanJusto">Ctro Vacunación San Justo</label>
-            <input type="radio" class="btn-check " name="centroVacunacion" id="laTablada" autocomplete="off">
-                <label class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion"
-                for="laTablada">Ctro Vacunación La Tablada</label>
-            <input type="radio" class="btn-check" name="centroVacunacion" id="ramosMejia" autocomplete="off">
-                <label class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion"
-                for="ramosMejia">Ctro Vacunación Ramos Mejía</label>
-        </div>
+                            <input type="radio" class="btn-check" name="centroVacunacion" id="moron" autocomplete="off">
+                            <label
+                                class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion"
+                                for="moron">
+                                Ctro Vacunación Morón
+                            </label>
 
-        <!-- buscador -->
-        <p>¿No te sirven esos? Buscá otros centros disponibles:</p>
-        <input type="text" id="buscadorCentros" class="form-control rounded-pill mb-3" placeholder="Buscar por localidad o nombre...">
+                            <input type="radio" class="btn-check" name="centroVacunacion" id="merlo" autocomplete="off">
+                            <label
+                                class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion"
+                                for="merlo">
+                                Ctro Vacunación Merlo
+                            </label>
+                        </div>
+                    </div>
 
-        <!-- resultados filtrables -->
-        <div id="otrosCentros" class="btn-group d-flex flex-wrap" role="group" aria-label="Otros centros">
-            <input type="radio" class="btn-check" name="centroVacunacion" id="ituzaingo" autocomplete="off">
-            <label class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion" for="ituzaingo">
-            Ctro Vacunación Ituzaingó
-            </label>
+                    <div class="row align-items-stretch item-reservar-turno">
+                        <!-- Mes y Semana -->
+                        <div class="col-md-6 mb-3">
+                            <label for="mes" class="form-label fs-3 fw-bold">Mes</label>
+                            <p style="margin-top: 0rem;">Desde hoy hasta 3 meses en adelante</p>
+                            <select class="form-select border border-dark rounded-pill cursor-pointer" id="mes">
+                                <option selected disabled>Seleccioná un mes</option>
+                                <!-- Opciones cargadas por JS -->
+                            </select>
 
-            <input type="radio" class="btn-check" name="centroVacunacion" id="moron" autocomplete="off">
-            <label class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion" for="moron">
-            Ctro Vacunación Morón
-            </label>
+                            <div class="mt-4">
+                                <label for="semana" class="form-label fs-3 fw-bold">Semana</label>
+                                <select class="form-select border border-dark rounded-pill cursor-pointer" id="semana">
+                                    <option selected disabled>Seleccioná una semana</option>
+                                </select>
+                            </div>
+                        </div>
 
-            <input type="radio" class="btn-check" name="centroVacunacion" id="merlo" autocomplete="off">
-            <label class="btn btn-outline-color4 m-1 flex-fill text-center borde-negro fit-content select-vacunacion" for="merlo">
-            Ctro Vacunación Merlo
-            </label>
-        </div>
-    </div>
+                        <!-- Franja horaria -->
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label d-block mb-3 fs-3 fw-bold">Franja horaria</label>
+                            <div class="d-flex flex-column align-items-center gap-2" role="group"
+                                aria-label="Franja horaria">
 
-    <div class="row align-items-stretch item-reservar-turno">
-  <!-- Mes y Semana -->
-        <div class="col-md-6 mb-3">
-            <label for="mes" class="form-label fs-3 fw-bold">Mes</label>
-            <p style="margin-top: 0rem;">Desde hoy hasta 3 meses en adelante</p>
-            <select class="form-select border border-dark rounded-pill cursor-pointer" id="mes">
-                <option selected disabled>Seleccioná un mes</option>
-            <!-- Opciones cargadas por JS -->
-            </select>
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="manana"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2"
+                                    for="manana" id="manana">Mañana (09:00 - 11:00)</label>
 
-            <div class="mt-4">
-            <label for="semana" class="form-label fs-3 fw-bold">Semana</label>
-            <select class="form-select border border-dark rounded-pill cursor-pointer" id="semana">
-                <option selected disabled>Seleccioná una semana</option>
-            </select>
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="mediodia"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2"
+                                    for="mediodia" id="mediodia">Mediodía (11:00 - 14:00)</label>
+
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="mediaTarde"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2"
+                                    for="mediaTarde" id="media-tarde" >Media-tarde (14:00 - 16:00)</label>
+
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="tarde"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2"
+                                    for="tarde" id="tarde">Tarde (16:00 - 18:00)</label>
+
+                                <input type="radio" class="btn-check" name="franjaHoraria" id="tardeNoche"
+                                    autocomplete="off">
+                                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2"
+                                    for="tardeNoche" id="tarde-noche">Tarde-noche (18:00 - 20:00)</label>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../paginas/confirmarTurno.html" class="btn btn-custom w-100 mt-3">Confirmar turno </a>
+                </form>
             </div>
-        </div>
-
-  <!-- Franja horaria -->
-        <div class="col-md-6 mb-3">
-            <label class="form-label d-block mb-3 fs-3 fw-bold">Franja horaria</label>
-            <div class="d-flex flex-column align-items-center gap-2" role="group" aria-label="Franja horaria">
-      
-                <input type="radio" class="btn-check" name="franjaHoraria" id="manana" autocomplete="off">
-                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2" for="manana">Mañana (09:00 - 11:00)</label>
-                
-                <input type="radio" class="btn-check" name="franjaHoraria" id="mediodia" autocomplete="off">
-                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2" for="mediodia">Mediodía (11:00 - 14:00)</label>
-
-                <input type="radio" class="btn-check" name="franjaHoraria" id="tarde" autocomplete="off">
-                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2" for="tarde">Tarde (14:00 - 18:00)</label>
-
-                <input type="radio" class="btn-check" name="franjaHoraria" id="tardeNoche" autocomplete="off">
-                <label class="btn btn-outline-color5 rounded-pill text-center fit-content px-3 py-2" for="tardeNoche">Tarde-noche (18:00 - 20:00)</label>
-            </div>
-        </div>
-    </div>
-            <a href="../paginas/confirmarTurno.html" class="btn btn-custom w-100 mt-3">Confirmar turno </a>
-            </form>
-        </div>
     </main>
 
 
@@ -255,9 +292,7 @@
         function pintarSiSeleccionado(selectElement) {
             const seleccionado = selectElement.value;
             if (seleccionado) {
-                selectElement.style.backgroundColor = "#0B6F53";
-                selectElement.style.fontWeight = "bold";
-                selectElement.style.color = "white";
+                selectElement.style.backgroundColor = "green";
             }
         }
 
@@ -271,82 +306,70 @@
         });
 
         const nodoSemana = document.getElementById("semana");
-        const nodoTardeNoche = document.getElementById("tarde-noche");
-        const nodoMediaManiana = document.getElementById("media-maniana");
-        const nodoManana = document.getElementById("manana");
-        const nodoMediodia = document.getElementById("mediodia");
-        const nodoTarde = document.getElementById("tarde");
-        const nodoMediaTarde = document.getElementById("media-tarde");
-        nodoSemana.addEventListener("change", function () {
-            const horarios = [nodoManana, nodoMediaManiana, nodoMediodia, nodoMediaTarde, nodoTarde, nodoTardeNoche];
+const horarios = {
+    manana: document.getElementById("manana"),
+    mediodia: document.getElementById("mediodia"),
+    mediaTarde: document.getElementById("media-tarde"),
+    tarde: document.getElementById("tarde"),
+    tardeNoche: document.getElementById("tarde-noche")
+};
 
-            // Limpiar todos los estados anteriores
-            horarios.forEach(nodo => {
-                nodo.classList.remove("disabled-label");
-            });
+// Definir reglas por número aleatorio
+const reglas = new Map([
+    [1, ["manana", "mediodia"]],
+    [2, ["tardeNoche", "manana", "mediodia"]],
+    [3, ["tarde", "manana"]],
+    [4, ["mediaTarde", "manana"]],
+    [5, ["tardeNoche", "manana"]],
+    [6, ["mediodia", "tarde", "manana"]],
+    [7, ["tarde", "manana"]],
+    [8, ["mediaTarde", "manana"]]
+]);
 
-            // Generar un número aleatorio entre 1 y 4
-            const random = Math.floor(Math.random() * 8) + 1;
+nodoSemana.addEventListener("change", function () {
+    limpiarHorarios();
 
-            // Aplicar nuevas restricciones según el random
-            switch (random) {
-                case 1:
-                    nodoManana.classList.add("disabled-label");
-                    break;
-                case 2:
-                    nodoTardeNoche.classList.add("disabled-label");
-                    break;
-                case 3:
-                    nodoTarde.classList.add("disabled-label");
-                    nodoManana.classList.add("disabled-label");
-                    break;
-                case 4:
-                    nodoMediaTarde.classList.add("disabled-label");
-                    nodoManana.classList.add("disabled-label");
-                    break;
-                case 5:
-                    nodoTardeNoche.classList.add("disabled-label");
-                    nodoManana.classList.add("disabled-label");
-                    break;
-                case 6:
-                    nodoMediodia.classList.add("disabled-label");
-                    nodoTarde.classList.add("disabled-label");
-                    break;
-                case 7:
-                    nodoTarde.classList.add("disabled-label");
-                    nodoManana.classList.add("disabled-label");
-                    break;
-                case 8:
-                    nodoMediaTarde.classList.add("disabled-label");
-                    nodoMediaManiana.classList.add("disabled-label");
-                    break;
-            }
-        });
+    const random = Math.floor(Math.random() * reglas.size) + 1;
+    aplicarRestricciones(random);
+});
+
+function limpiarHorarios() {
+    Object.values(horarios).forEach(nodo => nodo.classList.remove("disabled-label"));
+}
+
+function aplicarRestricciones(numero) {
+    const restriccion = reglas.get(numero);
+    if (!restriccion) return;
+
+    restriccion.forEach(nombre => {
+        horarios[nombre].classList.add("disabled-label");
+    });
+}
 
     </script>
     <script>
-  const buscador = document.getElementById("buscadorCentros");
-  const otrosCentros = document.getElementById("otrosCentros");
-  const etiquetas = otrosCentros.querySelectorAll("label");
+        const buscador = document.getElementById("buscadorCentros");
+        const otrosCentros = document.getElementById("otrosCentros");
+        const etiquetas = otrosCentros.querySelectorAll("label");
 
-  buscador.addEventListener("input", () => {
-    const texto = buscador.value.toLowerCase().trim();
+        buscador.addEventListener("input", () => {
+            const texto = buscador.value.toLowerCase().trim();
 
-    etiquetas.forEach(label => {
-      const contenido = label.textContent.toLowerCase();
-      if (texto === "") {
-        label.style.display = "none"; // oculta si no se está buscando
-      } else {
-        label.style.display = contenido.includes(texto) ? "inline-flex" : "none";
-      }
-    });
-  });
+            etiquetas.forEach(label => {
+                const contenido = label.textContent.toLowerCase();
+                if (texto === "") {
+                    label.style.display = "none"; // oculta si no se está buscando
+                } else {
+                    label.style.display = contenido.includes(texto) ? "inline-flex" : "none";
+                }
+            });
+        });
 
-  // Al principio ocultamos los centros extra
-  window.addEventListener("DOMContentLoaded", () => {
-    etiquetas.forEach(label => label.style.display = "none");
-  });
-</script>
+        // Al principio ocultamos los centros extra
+        window.addEventListener("DOMContentLoaded", () => {
+            etiquetas.forEach(label => label.style.display = "none");
+        });
+    </script>
 </body>
 
 </html>

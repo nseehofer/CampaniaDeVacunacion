@@ -434,3 +434,91 @@ input[type="radio"]:checked + .btn-outline-color5:active {
 .agrandar-fuente {
   font-size: large;
 }
+
+
+.info-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
+  font-weight: bolder;
+  margin-bottom: 5%;
+}
+
+.box {
+  background-color: #427AA1;
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: scale(1.03);
+}
+
+.icon-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.icon-item {
+  flex: 1 1 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.icon-item i {
+  font-size: 3rem;
+  color: #427AA1;
+  margin-bottom: 0.5rem;
+}
+
+.icon-item p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+.margen-cero{
+margin:0%;
+}
+
+.equal-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30vh;       
+  height: 15vh;      
+  text-align: center; 
+}
+
+.back-informativo {
+  background-color: #427AA1;
+}
+
+.back-informativo-href {
+  background-color: #427AA1;
+}
+
+
+.back-informativo-href:hover{
+background-color: #0f3435;
+}
+
+.disabled-label {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none; /* evita que se seleccione o se pinte */
+    background-color: transparent !important;
+    color: inherit !important;
+}
